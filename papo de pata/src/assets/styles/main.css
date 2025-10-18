@@ -1,0 +1,90 @@
+main {
+    width: 100%;
+    padding: 40px 70px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+h2 {
+    text-align: center;
+    font-family: "Instrument Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 50px;
+    color: var(--title-color);
+}
+
+section.conteiner-cards {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+div.card {
+    border-radius: 25px;
+    height: 450px;
+    width: 400px;
+    background: var(--main-color);
+    overflow: hidden;
+    box-shadow: -7px 7px 27px -3px rgba(0, 0, 0, 0.46);
+    -webkit-box-shadow: -7px 7px 27px -3px rgba(0, 0, 0, 0.46);
+    -moz-box-shadow: -7px 7px 27px -3px rgba(0, 0, 0, 0.46);
+}
+
+div.card:hover img.img-card {
+    scale: 1.2;
+}
+
+div.conteiner-img-card {
+    height: 200px;
+    width: 100%;
+    overflow: hidden;
+}
+
+img.img-card {
+    width: 100%;
+    object-fit: cover;
+    opacity: 85%;
+    transition: all .8s ease-in-out;
+}
+
+div.conteiner-texto-card {
+    padding: 15px 25px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 7px;
+}
+
+div.card h3 {
+    font-family: "Jost", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    color: var(--title-color);
+    font-size: 26px;
+}
+
+div.conteiner-texto-card p {
+    font-family: "Jomolhari", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--paragraph-color);
+    font-size: 22px;
+}
+
+div.conteiner-texto-card span {
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    color: var(--title-color);
+    font-size: 18px;
+}
+
+div.card.inativo{
+    display: none;
+}
