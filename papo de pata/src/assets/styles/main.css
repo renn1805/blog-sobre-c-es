@@ -8,8 +8,7 @@ main {
 
 h2 {
     text-align: center;
-    font-family: "Instrument Sans", sans-serif;
-    font-optical-sizing: auto;
+    font-family: cursive;
     font-weight: 600;
     font-style: normal;
     font-size: 50px;
@@ -25,6 +24,7 @@ section.conteiner-cards {
 }
 
 div.card {
+    animation: animacaoAparecerCard 1.5s ease-in-out;
     border-radius: 25px;
     height: 400px;
     width: 350px;
@@ -33,6 +33,11 @@ div.card {
     box-shadow: -7px 7px 27px -3px rgba(0, 0, 0, 0.46);
     -webkit-box-shadow: -7px 7px 27px -3px rgba(0, 0, 0, 0.46);
     -moz-box-shadow: -7px 7px 27px -3px rgba(0, 0, 0, 0.46);
+    transition: transform 1s ease-in-out;
+}
+
+div.card:hover {
+    transform: translateY(-25px);
 }
 
 div.card:hover img.img-card {
@@ -53,31 +58,34 @@ img.img-card {
 }
 
 div.conteiner-texto-card {
-    padding: 15px 25px;
+    padding: 5px 25px;
     display: flex;
     flex-direction: column;
-    row-gap: 7px;
+    row-gap: 6px;
 }
 
 div.card h3 {
-    font-family: "Jost", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 700;
+    font-family: "itim", cursive;
+    font-weight: 400;
     font-style: normal;
     color: var(--title-color);
     font-size: 26px;
 }
 
 div.conteiner-texto-card p {
-    font-family: "Jomolhari", serif;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
     color: var(--paragraph-color);
-    font-size: 22px;
+    font-size: 20px;
 }
 
 div.conteiner-texto-card span {
-    font-family: "Josefin Sans", sans-serif;
+
+    font-family: "Josefin Sans", cursive;
     font-optical-sizing: auto;
     font-weight: 600;
     font-style: normal;
@@ -87,4 +95,38 @@ div.conteiner-texto-card span {
 
 div.card.inativo {
     display: none;
+}
+
+@keyframes animacaoAparecerCard {
+    0% {
+        opacity: 0;
+        transform: translateY(-40px);
+    }
+
+    100% {
+        opacity: 100%;
+        transform: translateY(0);
+    }
+}
+
+button.botaoVerCards {
+    width: 100%;
+    height: 45px;
+    outline: none;
+    background: var(--title-color);
+    border-radius: 25px;
+    border: none;
+    transition: all 1s ease-in-out;
+}
+
+button.botaoVerCards:hover {
+    box-shadow: -7px 5px 10px -3px rgba(0, 0, 0, 0.46);
+    -webkit-box-shadow: -7px 7px 10px -3px rgba(0, 0, 0, 0.46);
+    -moz-box-shadow: -7px 7px 10px -3px rgba(0, 0, 0, 0.46);
+    transform: translateY(-5px);
+}
+
+button.botaoVerCards h2 {
+    color: white;
+    font-size: 24px;
 }

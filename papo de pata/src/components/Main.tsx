@@ -6,7 +6,9 @@ const Main = () => {
       <main>
          <h2>Conheça mais sobre nossos amados companheiros</h2>
          <Cards />
-         <button className="botaoVerCards">ativar</button>
+         <button className="botaoVerCards">
+            <h2>Mostrar mais</h2>
+         </button>
       </main>
    );
 };

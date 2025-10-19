@@ -1,0 +1,103 @@
+section.form-area {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+    align-items: center;
+}
+
+h2.titulo-section-form-area {
+    font-size: 3.5rem;
+}
+
+p.paragrafo-section-form-area {
+    font-family: cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+    color: var(--paragraph-color);
+    font-size: 1.5rem;
+
+    width: 70%;
+    text-align: center;
+}
+
+div.conteiner-ol-form {
+    background: var(--main-color);
+    width: 900px;
+    padding: 30px 40px;
+    border-radius: 25px;
+}
+
+ol {
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+}
+
+li {
+    color: var(--title-color);
+    font-family: cursive;
+    font-optical-sizing: auto;
+    font-weight: 940;
+    font-style: normal;
+    font-size: 24px;
+    list-style-position: inside;
+}
+
+li::marker {
+    font-size: 26px;
+}
+
+li h3 {
+    display: inline-block;
+}
+
+div.conteiner-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 30px;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 40px;
+    width: calc(2 * 370px + 40px + 2px);
+}
+
+form label {
+    display: flex;
+    flex-direction: column;
+}
+
+label input {
+    background: transparent;
+    border: 4px solid var(--input-color);
+    border-radius: 20px;
+    height: 60px;
+    width: 370px;
+    font-size: 1.3rem;
+    padding: 0 0 0 15px;
+    outline: none;
+}
+
+label span {
+    font-size: 1.3rem;
+    font-family: "Roboto", sans-serif;
+    color: var(--title-color);
+    font-weight: 500;
+}
+
+button.botaoProximoPasso{
+    background: var(--button-next-step-color);
+    padding: 15px;
+    color: var(--title-color);
+    border: 2px solid currentColor;
+    border-radius: 20px;
+    font-family: cursive;
+    font-size: 1.2rem;
+}

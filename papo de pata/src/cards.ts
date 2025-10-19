@@ -20,7 +20,7 @@ const Card1: Card = {
     numeroCard: 'card1',
     imagemCard: imagemCard1,
     titleCard: "Do uivo ao lar",
-    paragraphCard: "Antes selvagens e livres, os lobos se aproximaram do homem em busca de abrigo e amizade — e assim nasceu uma das parcerias mais belas da história."
+    paragraphCard: "Antes selvagens e livres, os lobos se aproximaram do homem em busca de abrigo e amizade. Assim nasceu uma das parcerias mais belas da história."
 }
 
 const Card2: Card = {
