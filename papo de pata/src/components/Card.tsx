@@ -5,7 +5,7 @@ const Card = ({imagemCard, tituloCard, paragraphCard}: any) => {
             <img src={imagemCard} alt="imagem de um cão" className="img-card" />
          </div>
 
-         <div className="conteiner-texto-card" >
+         <div className="conteiner-texto-card">
             <h3>{tituloCard}</h3>
             <p>{paragraphCard}</p>
             <span>Descubra essa transformação na nossa matéria completa!</span>

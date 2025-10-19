@@ -26,8 +26,8 @@ section.conteiner-cards {
 
 div.card {
     border-radius: 25px;
-    height: 450px;
-    width: 400px;
+    height: 400px;
+    width: 350px;
     background: var(--main-color);
     overflow: hidden;
     box-shadow: -7px 7px 27px -3px rgba(0, 0, 0, 0.46);
@@ -40,7 +40,7 @@ div.card:hover img.img-card {
 }
 
 div.conteiner-img-card {
-    height: 200px;
+    height: 170px;
     width: 100%;
     overflow: hidden;
 }
@@ -85,6 +85,6 @@ div.conteiner-texto-card span {
     font-size: 18px;
 }
 
-div.card.inativo{
+div.card.inativo {
     display: none;
 }
