@@ -1,5 +1,5 @@
 import "../assets/styles/main.css";
-import Cards from "./Cards";
+import Cards from "./Cards.tsx";
 
 const Main = () => {
    return (

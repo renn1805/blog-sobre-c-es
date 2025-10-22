@@ -42,4 +42,33 @@ if (botao) {
    });
 }
 
+const formulario: HTMLElement | null = document.querySelector("form");
+
+if (formulario instanceof HTMLElement) {
+   formulario.addEventListener("submit", (e) => {
+      e.preventDefault();
+      const inputs = document.querySelectorAll<HTMLInputElement>(
+         "#primeiro-form input"
+      );
+      interface IputsValores {
+         inputNome: any;
+         inputTel: any;
+         inputEmail: any;
+         inputData: any;
+         inputProfissao: any;
+      }
+      const inputValores: IputsValores = {
+         inputNome: inputs[0].value,
+         inputTel: inputs[1].value,
+         inputEmail: inputs[2].value,
+         inputData: inputs[3].value,
+         inputProfissao: inputs[4].value,
+      };
+      console.log(inputValores);
+      inputs.forEach((input) => {
+         input.value = "";
+      });
+   });
+}
+
 export default App;

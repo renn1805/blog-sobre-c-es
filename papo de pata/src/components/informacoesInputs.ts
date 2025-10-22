@@ -1,12 +1,12 @@
 export interface InformacoesInputs1 {
     descricao: string,
-    tipoInput:string,
+    tipoInput: string,
     placeholderInput: string;
 }
 
 export const listaInformacoesInput1: InformacoesInputs1[] = [
     {
-        descricao: "Nome Completo *",
+        descricao: "Nome Completo *",       
         tipoInput: 'text',
         placeholderInput: "Renan Almeida de Araujo"
     },

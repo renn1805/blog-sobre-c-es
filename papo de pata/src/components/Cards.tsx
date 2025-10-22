@@ -1,5 +1,5 @@
 import Card from "./Card.tsx";
-import {cards} from "../cards.ts";
+import {cards} from "./cards.ts";
 
 const Cards = () => {
    return (

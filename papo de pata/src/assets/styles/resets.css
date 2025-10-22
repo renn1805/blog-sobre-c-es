@@ -11,8 +11,10 @@
     --title-color: #622608;
     --paragraph-color: #48443C;
     --input-color: #968B85;
+    --input-hover-color: #6226082e;
     --button-next-step-color: #968b8555;
     --border-button-next-step-color: #968B85;
+
 }
 
 body {

@@ -76,13 +76,31 @@ form label {
 
 label input {
     background: transparent;
-    border: 4px solid var(--input-color);
+    border: 4px solid currentColor;
     border-radius: 20px;
     height: 60px;
     width: 370px;
     font-size: 1.3rem;
     padding: 0 0 0 15px;
     outline: none;
+    color: var(--input-color);
+    font-family: cursive;
+    transition: all .5s ease-in-out;
+}
+
+label input:hover {
+    background: var(--input-hover-color);
+}
+
+label input:focus {
+    background: var(--input-hover-color);
+    color: white;
+    border: 4px solid var(--title-color);
+}
+
+label input:hover,
+input:hover::placeholder {
+    color: var(--title-color);
 }
 
 label span {
@@ -92,7 +110,7 @@ label span {
     font-weight: 500;
 }
 
-button.botaoProximoPasso{
+button.botaoProximoPasso {
     background: var(--button-next-step-color);
     padding: 15px;
     color: var(--title-color);

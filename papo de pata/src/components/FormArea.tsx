@@ -13,10 +13,10 @@ const FormArea = () => {
          <div className="conteiner-ol-form">
             <ol>
                <li>
-                  <h3>Informaçõs pessoais</h3>
+                  <h3>Informações pessoais</h3>
                </li>
                <div className="conteiner-form">
-                  <form id="primeiro-form"> 
+                  <form id="primeiro-form">
                      {listaInformacoesInput1.map((e) => (
                         <Input
                            descricao={e.descricao}
@@ -25,12 +25,16 @@ const FormArea = () => {
                         />
                      ))}
                   </form>
-                  <button className="botaoProximoPasso" type="submit" form="primeiro-form"><h3>Próximo Passo</h3></button>
+                  <button
+                     className="botaoProximoPasso"
+                     type="submit"
+                     form="primeiro-form">
+                     <h3>Próximo Passo</h3>
+                  </button>
                </div>
             </ol>
          </div>
       </section>
    );
 };
-
 export default FormArea;
