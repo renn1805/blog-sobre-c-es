@@ -2,7 +2,11 @@ const Input = ({descricao, tipoInput, placeholderInput}: any) => {
    return (
       <label className="conteiner-input">
          <span>{descricao}</span>
-         <input type={tipoInput} name="nome" placeholder={placeholderInput} />
+         <input
+            type={tipoInput}
+            placeholder={placeholderInput}
+            required
+         />
       </label>
    );
 };

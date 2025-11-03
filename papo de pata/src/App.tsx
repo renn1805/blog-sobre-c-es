@@ -1,10 +1,13 @@
+import MudarForm from "./components/Form/informacoesInputs.ts";
+
 import "./assets/styles/resets.css";
 import "./assets/styles/Main.css";
 
+import Footer from "./components/Footer.tsx";
 import Navbar from "./components/navbar.tsx";
 import Header from "./components/Header.tsx";
 import Main from "./components/Main.tsx";
-import FormArea from "./components/FormArea.tsx";
+import FormArea from "./components/Form/FormArea.tsx";
 const App = () => {
    return (
       <div>
@@ -12,10 +15,12 @@ const App = () => {
          <Header />
          <Main />
          <FormArea />
+         <Footer />
       </div>
    );
 };
 
+// todo: fazer com que fique melhor separado e otimizado o codigo; fazer uma ficha no final do formulario
 const botao: HTMLElement | null = document.querySelector(".botaoVerCards");
 const lista = document.querySelectorAll(".card");
 if (lista[3] && lista[4] && lista[5] instanceof HTMLElement) {
@@ -40,35 +45,35 @@ if (botao) {
          }
       }
    });
-}
 
-const formulario: HTMLElement | null = document.querySelector("form");
+   const formulario: HTMLElement | null = document.querySelector("form");
 
-if (formulario instanceof HTMLElement) {
-   formulario.addEventListener("submit", (e) => {
-      e.preventDefault();
-      const inputs = document.querySelectorAll<HTMLInputElement>(
-         "#primeiro-form input"
-      );
-      interface IputsValores {
-         inputNome: any;
-         inputTel: any;
-         inputEmail: any;
-         inputData: any;
-         inputProfissao: any;
-      }
-      const inputValores: IputsValores = {
-         inputNome: inputs[0].value,
-         inputTel: inputs[1].value,
-         inputEmail: inputs[2].value,
-         inputData: inputs[3].value,
-         inputProfissao: inputs[4].value,
-      };
-      console.log(inputValores);
-      inputs.forEach((input) => {
-         input.value = "";
+   if (formulario instanceof HTMLElement) {
+      formulario.addEventListener("submit", (e) => {
+         e.preventDefault();
+         MudarForm;
+         const inputs = document.querySelectorAll<HTMLInputElement>(
+            "#primeiro-form input"
+         );
+         interface IputsValores {
+            inputNome: any;
+            inputTel: any;
+            inputEmail: any;
+            inputData: any;
+            inputProfissao: any;
+         }
+         const inputValores: IputsValores = {
+            inputNome: inputs[0].value,
+            inputTel: inputs[1].value,
+            inputEmail: inputs[2].value,
+            inputData: inputs[3].value,
+            inputProfissao: inputs[4].value,
+         };
+         inputs.forEach((input) => {
+            input.value = "";
+         });
       });
-   });
+   }
 }
 
 export default App;

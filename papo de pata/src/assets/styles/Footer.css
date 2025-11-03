@@ -1,0 +1,25 @@
+footer {
+    background: var(--main-color);
+    margin-top: 100px;
+    padding: 35px 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+    align-items: center;
+
+}
+
+img.icone-footer {
+    width: 70px;
+}
+
+img.logo-footer {
+    width: 110px;
+}
+footer img{
+    transition: all .6s ease-in-out;
+}
+footer img:hover{
+    transform: scale(1.1);
+}

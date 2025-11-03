@@ -94,7 +94,7 @@ label input:hover {
 
 label input:focus {
     background: var(--input-hover-color);
-    color: white;
+    color: var(--title-color);
     border: 4px solid var(--title-color);
 }
 
@@ -114,8 +114,15 @@ button.botaoProximoPasso {
     background: var(--button-next-step-color);
     padding: 15px;
     color: var(--title-color);
-    border: 2px solid currentColor;
+    border: 2px solid var(--title-color);
     border-radius: 20px;
     font-family: cursive;
     font-size: 1.2rem;
+    transition: all .6s ease-in-out;
+}
+
+button.botaoProximoPasso:hover {
+    background: var(--title-color);
+    color: white;
+    border: 2px solid var(--title-color);
 }

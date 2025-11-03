@@ -1,6 +1,6 @@
-import "../assets/styles/FormArea.css";
-import Input from "./Input";
-import {listaInformacoesInput1} from "./informacoesInputs";
+import "../../assets/styles/FormArea.css";
+
+import Form from "./Form";
 
 const FormArea = () => {
    return (
@@ -16,15 +16,7 @@ const FormArea = () => {
                   <h3>Informações pessoais</h3>
                </li>
                <div className="conteiner-form">
-                  <form id="primeiro-form">
-                     {listaInformacoesInput1.map((e) => (
-                        <Input
-                           descricao={e.descricao}
-                           tipoInput={e.tipoInput}
-                           placeholderInput={e.placeholderInput}
-                        />
-                     ))}
-                  </form>
+                  <Form />
                   <button
                      className="botaoProximoPasso"
                      type="submit"
@@ -37,4 +29,9 @@ const FormArea = () => {
       </section>
    );
 };
+export const botaoProximoPasso: HTMLElement | null = document.querySelector(
+   "button.botaoProximoPasso"
+);
+console.log(botaoProximoPasso);
+
 export default FormArea;
