@@ -1,11 +1,10 @@
 
-import imagemCard1 from "../../public/1-img-card.jpg"
-import imagemCard2 from "../../public/2-img-card.jpg"
-import imagemCard3 from "../../public/3-img-card.jpg"
-import imagemCard4 from "../../public/4-img-card.jpg"
-import imagemCard5 from "../../public/5-img-card.jpg"
-import imagemCard6 from "../../public/6-img-card.jpg"
-
+import imagemCard1 from "../../../public/1-img-card.jpg"
+import imagemCard3 from "../../../public/3-img-card.jpg"
+import imagemCard2 from "../../../public/2-img-card.jpg"
+import imagemCard4 from "../../../public/4-img-card.jpg"
+import imagemCard5 from "../../../public/5-img-card.jpg"
+import imagemCard6 from "../../../public/6-img-card.jpg"
 
 
 export interface Card {
